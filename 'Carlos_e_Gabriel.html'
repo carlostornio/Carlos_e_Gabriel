@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Interativa do Carlos para o Gabriel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Oi! Essa é uma mensagem do Carlos para o Gabriel.</h1>
+    <p>Você deseja ler a mensagem?</p>
+    <button onclick="openLink('https://m.media-amazon.com/images/I/51kTZxkwyDL._AC_UF1000,1000_QL80_.jpg')">SIM</button>
+    <button onclick="openLink('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQavUtI8b0F1-Np8C5FWGxN06zuqdd6PNFoH4h_Qu4DpQ&s')">NÃO</button>
+</div>
+
+<script>
+    function openLink(url) {
+        window.location.href = url;
+    }
+</script>
+
+</body>
+</html>
